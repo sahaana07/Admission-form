@@ -1,0 +1,229 @@
+<!DOCTYPE html> <html lang="en"> <head>
+<meta charset="UTF-8"> <title>Admission Form</title> <style>
+*{
+box-sizing: border-box;
+}
+body {
+border: 10px solid #b2abab; margin: auto;
+font-family: Arial, sans-serif; max-width: 800px;
+padding: 0;
+}
+.main {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+padding: 20px;
+background: white;
+border-top: 20px solid #f89a00; box-shadow: 0px 0px 15px 16px #80808080; position: relative;
+}
+.heading {
+text-align: center; text-decoration: underline;
+}
+.combine { display: flex;
+flex-wrap: wrap; justify-content: space-between; gap: 20px;
+}
+        .tt {
+            flex: 1 1 60%;
+min-width: 250px; }
+.photo-box {
+border: 1px dotted #000;
+ 
+ width: 120px;
+height: 150px;
+display: flex; justify-content: center; align-items: center; overflow: hidden; text-align: center; font-size: 14px; flex-shrink: 0;
+}
+.photo-box img { width: 120px;
+height: 150px;
+object-fit: cover; }
+.box1, .box2, .box3, .box4, .downbox { background-color: lch(72.26% 82.91 68.66);
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%); margin-bottom: 10px;
+}
+.box1, .box2 { width: 200px; height: 40px;
+}
+.box3 {
+    width: 100%;
+height: 40px;
+margin-top: 0; }
+.box4 {
+width: 400px;
+height: 10px;
+margin-bottom: 0; }
+.downbox {
+    width: 17%;
+height: 10px; }
+
+ .in, .zip, .e, .ini, .int { border: 1px dotted #000; outline: none;
+height: 25px;
+}
+.in {
+    width: 100%;
+}
+.zip {
+width: 100px;
+}
+.e {
+width: 300px;
+}
+.ini {
+    width: 100%;
+}
+.int {
+    width: 100%;
+}
+.cn {
+margin-right: 40%;
+}
+.date {
+    width: 31px;
+height: 27px;
+margin-right: 2px; }
+.container {
+text-decoration: overline dotted; margin-left: 70%;
+margin-bottom: 10%;
+}
+table {
+    width: 100%;
+border-spacing: 10px; }
+
+ td {
+vertical-align: middle;
+}
+label {
+white-space: nowrap;
+}
+.para {
+margin-left: 1%; margin-right: 1%;
+}
+.signature-box { position: absolute; right: 20px; bottom: 70px; text-align: center;
+}
+.signature-line {
+border-top: 1px dotted black; width: 200px;
+margin-bottom: 5px;
+}
+.signature-label { font-size: 14px;
+}
+    </style>
+</head>
+<body>
+<div class="main">
+<h2 class="heading">Admission Form</h2> <div class="combine">
+<div class="tt"> <table>
+Name</label></td> class="ini"/></td>
+<tr>
+<td style="width: 130px;"><label for="nam">Your's
+<td><input type="text" name="nam" id="uname"
+</tr> <tr>
+<td><label for="fnam">Father's Name</label></td>
+<td><input type="text" name="fnam" id="fan" class="ini"/></td> </tr>
+<tr>
+
+ <td><label for="mnam">Mother's Name</label></td>
+<td><input type="text" name="mnam" id="man" class="ini"/></td> </tr>
+        </table>
+    </div>
+<div class="photo-box">
+<img src="photo.jpg" alt="Photo">
+    </div>
+</div>
+<table> <tr>
+<td style="width: 130px;">Gender:</td>
+<td><input type="checkbox" name="male" id="m" class="in"></td> <td><label for="male">Male</label></td>
+<td><input type="checkbox" name="female" id="f" class="in"></td> <td><label for="female">Female</label></td>
+<td>Date of birth:</td>
+<td colspan="7">
+<input type="number" name="d1" class="date" placeholder="D"> <input type="number" name="d2" class="date" placeholder="D"> <input type="number" name="m1" class="date" placeholder="M"> <input type="number" name="m2" class="date" placeholder="M"> <input type="number" name="y1" class="date" placeholder="Y"> <input type="number" name="y2" class="date" placeholder="Y"> <input type="number" name="y3" class="date" placeholder="Y"> <input type="number" name="y4" class="date" placeholder="Y">
+</td> </tr>
+</table>
+<table> <tr>
+<td>Residence status:</td>
+<td><input type="checkbox" id="rs" name="rs" class="in"></td> <td><label for="rs">Resident</label></td>
+<td><input type="checkbox" id="nrs" name="rs" class="in"></td> <td><label for="nrs">Non Resident</label></td>
+<td>Marital status:</td>
+<td><input type="checkbox" id="mrs" name="rs" class="in"></td> <td><label for="mrs">Married</label></td>
+<td><input type="checkbox" id="nmrs" name="rs" class="in"></td> <td><label for="nmrs">Unmarried</label></td>
+    </tr>
+</table>
+<table> <tr>
+
+ <td><label for="rel">Religion:</label></td>
+<td><input type="text" name="rel" id="reli" class="int"></td> <td><label for="nat">Nationality:</label></td>
+<td><input type="text" name="nat" id="nati" class="int"></td>
+</tr> <tr>
+<td><label for="idno">National ID No:</label></td>
+<td><input type="number" name="idno" id="no" class="int"></td> <td><label for="pass">Passport No:</label></td>
+<td><input type="text" name="pass" id="pass" maxlength="8"
+class="int"></td> </tr>
+<tr>
+<td><label for="lic">Driving license:</label></td> <td><input type="text" name="lic" id="dlic" maxlength="15"
+class="int"></td>
+<td><label for="tn">TN ID No:</label></td>
+<td><input type="number" name="tn" id="tno" maxlength="8" class="int"></td>
+            </tr>
+        </table>
+<br>Other ID Number (In case National ID/Passport ID not available)<br><br>
+<div class="box1">Present Address</div>
+<table> <tr>
+<td><label for="hn">House Number:</label></td>
+<td><input type="number" name="hn" id="hno1" class="in"></td> <td><label for="city">City:</label></td>
+<td><input type="text" name="city" id="city1" class="in"></td> <td><label for="zc">Zip Code:</label></td>
+<td><input type="number" name="code" id="zc1" maxlength="6"
+class="zip"></td>
+<td><label for="county">Country:</label></td>
+<td><input type="text" name="coun" id="county1" class="in"></td> </tr>
+<tr>
+<td><label for="pn">Phone Number:</label></td>
+<td><input type="number" name="pn" id="pno1" class="in"></td> <td><label for="fax">Fax:</label></td>
+<td><input type="number" name="fax" id="fax1" class="in"></td> <td><label for="eid">Email:</label></td>
+<td><input type="text" name="eid" id="email1" class="in"></td>
+            </tr>
+        </table>
+
+ <br>
+<div class="box2">Permanent Address </div>
+<table> <tr>
+                <td><label
+                <td><input
+                <td><label
+                <td><input
+                <td><label
+                <td><input
+class="zip"></td> <td><label
+                <td><input
+            </tr>
+            <tr>
+                <td><label
+                <td><input
+                <td><label
+                <td><input
+                <td><label
+                <td><input
+            </tr>
+        </table>
+<br>
+<div class="para">
+for="hn">House Number:</label></td>
+type="number" name="hn" id="hno2" class="in"></td> for="city">City:</label></td>
+type="text" name="city" id="city2"
+for="zc">Zip Code:</label></td>
+type="number" name="code" id="zc2"
+for="county">Country:</label></td>
+type="text" name="coun" id="county2" class="in"></td>
+for="pn">Phone Number:</label></td>
+type="number" name="pn" id="pno2" class="in"></td> for="fax">Fax:</label></td>
+type="number" name="fax" id="fax2" class="in"></td> for="eid">Email:</label></td>
+type="text" name="eid" id="email2" class="in"></td>
+<p>We are provided the good job of the many job review. I accept from the good offer and googlemandotory and the goods from the awesome service name and provide new of the good creative job offer accept thanks.</p>
+</div>
+<div class="box4"></div><br> <div class="box3"></div>
+<div class="signature-box">
+<div class="signature-line"></div>
+<div class="signature-label">Applicant's Signature</div>
+        </div>
+    </div>
+</body>
+</html>
+class="in"></td> maxlength="6"
